@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Details</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<img src="imageee.jpeg" alt="Ticket Image" class="header-image">
+<h1>Ticket Details</h1> 
+<div class="overlay">
+<form method="post" action="ticketDetails.php">
+<label for="teamName">Team Name:</label>
+<input type="text" id="teamName" name="teamName" required>
+<label for="members">Number of Members:</label>
+<input type="number" id="members" name="members" min="1" required>
+<label>Escape Room Type:</label>
+<div class="radio-group"> 
+<input type="radio" id="prison" name="roomType" value="prison">
+<label for="prison">Prison</label>
+<input type="radio" id="time" name="roomType" value="time">
+<label for="time">Time</label>
+<input type="radio" id="virus" name="roomType" value="virus">
+<label for="virus">Virus Z</label>
+</div>
+<label for="date">Date:</label>
+<input type="date" id="date" name="date" required>
+<button type="submit">Add</button>
+</form>
+</div>
+</div>
+</body>
+</html>
+
